@@ -2,10 +2,16 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-export const ContactCard = ({ imgSource, imgAlt, name, linkedin, github }) => {
-  const newStyle = {};
+export const ContactCard = ({ imgSource, imgAlt, name, linkedin, github } : {
+  imgSource: string;
+  imgAlt: string;
+  name: string;
+  linkedin: string;
+  github: string;
+}) => {
+  const newStyle: React.CSSProperties = {};
 
-  if (name === 'Cameron Kirksey' || 'Eric Rennie' || 'Richard Dao') {
+  if (name === 'Cameron Kirksey' || name === 'Eric Rennie' || name === 'Richard Dao') {
     newStyle.marginTop = '4.5%';
   }
   const [first, last] = name.split(' ');

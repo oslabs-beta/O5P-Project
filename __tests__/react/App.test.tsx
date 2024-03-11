@@ -1,4 +1,6 @@
 import React from 'react';
+// render - renders your React component into a virtual DOM that you can interact with in tests
+// screen - provides a set of query functions (e.g. 'getBy', 'queryBy', 'findAllBy') that you can use to interact with the rendered component 
 import { render, screen } from '@testing-library/react';
 import App from '../../src/components/App';
 import { MemoryRouter } from 'react-router-dom';

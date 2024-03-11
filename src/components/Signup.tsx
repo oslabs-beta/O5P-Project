@@ -4,9 +4,9 @@ import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 function Signup() {
   // Update this to place .env variables for port...
-  const URL = 'http://localhost:4000/users/signup';
+  const URL: string = 'http://localhost:4000/users/signup';
   const navigate = useNavigate();
-  const [showConfirmation, setShowConfirmation] = useState(false); // State to control confirmation message
+  const [showConfirmation, setShowConfirmation] = useState<boolean>(false); // State to control confirmation message
   // fetch request handler
   const handleSubmit = async (e) => {
     e.preventDefault();
